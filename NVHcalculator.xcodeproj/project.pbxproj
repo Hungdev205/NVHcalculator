@@ -12,6 +12,8 @@
 		0EB5C3671D3100E500434E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB5C3651D3100E500434E9F /* Main.storyboard */; };
 		0EB5C3691D3100E500434E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB5C3681D3100E500434E9F /* Assets.xcassets */; };
 		0EB5C36C1D3100E500434E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB5C36A1D3100E500434E9F /* LaunchScreen.storyboard */; };
+		0ED887E11D35F85C007259B4 /* OperatorsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED887E01D35F85C007259B4 /* OperatorsButton.swift */; };
+		0ED887E31D35FD4A007259B4 /* GradianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED887E21D35FD4A007259B4 /* GradianView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0EB5C3681D3100E500434E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB5C36B1D3100E500434E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EB5C36D1D3100E500434E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED887E01D35F85C007259B4 /* OperatorsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorsButton.swift; sourceTree = "<group>"; };
+		0ED887E21D35FD4A007259B4 /* GradianView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradianView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				0EB5C3611D3100E500434E9F /* AppDelegate.swift */,
 				0EB5C3631D3100E500434E9F /* ViewController.swift */,
+				0ED887E01D35F85C007259B4 /* OperatorsButton.swift */,
+				0ED887E21D35FD4A007259B4 /* GradianView.swift */,
 				0EB5C3651D3100E500434E9F /* Main.storyboard */,
 				0EB5C3681D3100E500434E9F /* Assets.xcassets */,
 				0EB5C36A1D3100E500434E9F /* LaunchScreen.storyboard */,
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED887E11D35F85C007259B4 /* OperatorsButton.swift in Sources */,
+				0ED887E31D35FD4A007259B4 /* GradianView.swift in Sources */,
 				0EB5C3641D3100E500434E9F /* ViewController.swift in Sources */,
 				0EB5C3621D3100E500434E9F /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +296,7 @@
 				0EB5C3721D3100E500434E9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

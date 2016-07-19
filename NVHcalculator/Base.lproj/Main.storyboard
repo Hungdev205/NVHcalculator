@@ -18,10 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-bu-Gip" userLabel="Calculator View">
+                            <view tag="110" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYq-bu-Gip" userLabel="Calculator View" customClass="GradianView" customModule="NVHcalculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="297" width="375" height="370"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw4-Md-fNX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw4-Md-fNX" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="13" y="52" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -31,8 +31,11 @@
                                         <state key="normal" title="7">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0i-pV-NSi"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD6-L1-QVb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD6-L1-QVb" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="105" y="52" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -42,8 +45,11 @@
                                         <state key="normal" title="8">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUq-PQ-rMV"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10k-PB-gro">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10k-PB-gro" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="197" y="52" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -53,19 +59,11 @@
                                         <state key="normal" title="9">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8cg-2r-ubH"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-pX-TcA">
-                                        <rect key="frame" x="289" y="52" width="73" height="62"/>
-                                        <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="9VI-pX-TcA" secondAttribute="height" multiplier="73:62" id="HZZ-PK-lTy"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                        <state key="normal" title="*">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPw-59-dXJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPw-59-dXJ" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="13" y="133" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -75,8 +73,11 @@
                                         <state key="normal" title="4">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aID-ew-P0c"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kl-D8-TlV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kl-D8-TlV" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="13" y="214" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -86,16 +87,22 @@
                                         <state key="normal" title="1">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6Q-EX-HNf"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Tc-NQv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Tc-NQv" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="13" y="295" width="165" height="57"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <state key="normal" title="0">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWy-ed-gYP"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9g-BE-1S5">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9g-BE-1S5" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="105" y="133" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -105,8 +112,11 @@
                                         <state key="normal" title="5">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKC-5k-W7C"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfy-1g-Lbj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfy-1g-Lbj" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="197" y="133" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -116,19 +126,11 @@
                                         <state key="normal" title="6">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="keO-tl-Kir"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5go-AE-pVf">
-                                        <rect key="frame" x="289" y="133" width="73" height="62"/>
-                                        <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="5go-AE-pVf" secondAttribute="height" multiplier="73:62" id="nx1-Dt-dcl"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoc-HB-16t">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoc-HB-16t" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="105" y="214" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -138,8 +140,11 @@
                                         <state key="normal" title="2">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tG8-be-dEH"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C3-p0-bXV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C3-p0-bXV" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="197" y="214" width="73" height="62"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -149,8 +154,61 @@
                                         <state key="normal" title="3">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7m2-Tn-1Lq"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2T-AA-Lvu">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNx-j4-RGD" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="295" width="73" height="57"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G21-mg-eEt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ws3-qt-wTe" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
+                                        <rect key="frame" x="289" y="295" width="73" height="57"/>
+                                        <color key="backgroundColor" red="0.58845443929487617" green="0.72494710319996725" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="37"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="equalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e0T-0e-aoi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-pX-TcA" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
+                                        <rect key="frame" x="289" y="52" width="73" height="62"/>
+                                        <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9VI-pX-TcA" secondAttribute="height" multiplier="73:62" id="HZZ-PK-lTy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <state key="normal" title="*">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="operatorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Po7-xx-R8p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5go-AE-pVf" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
+                                        <rect key="frame" x="289" y="133" width="73" height="62"/>
+                                        <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5go-AE-pVf" secondAttribute="height" multiplier="73:62" id="nx1-Dt-dcl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="operatorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYe-xc-xm4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2T-AA-Lvu" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="289" y="214" width="73" height="62"/>
                                         <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -160,22 +218,9 @@
                                         <state key="normal" title="-">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNx-j4-RGD">
-                                        <rect key="frame" x="197" y="295" width="73" height="57"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                        <state key="normal" title=".">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ws3-qt-wTe">
-                                        <rect key="frame" x="289" y="295" width="73" height="57"/>
-                                        <color key="backgroundColor" red="0.58845443929487617" green="0.72494710319996725" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="37"/>
-                                        <state key="normal" title="=">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <connections>
+                                            <action selector="operatorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRa-u4-7sO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -235,7 +280,7 @@
                                     <constraint firstAttribute="bottom" secondItem="MNx-j4-RGD" secondAttribute="bottom" constant="18" id="xr6-ea-iSu"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XF-AX-KMc" userLabel="Display View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XF-AX-KMc" userLabel="Display View" customClass="GradianView" customModule="NVHcalculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="297"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocF-Vo-E0p">
@@ -244,8 +289,8 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ba-WP-jaJ">
-                                        <rect key="frame" x="13" y="39" width="362" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ba-WP-jaJ">
+                                        <rect key="frame" x="13" y="52" width="362" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -261,7 +306,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nm-0u-wbm" userLabel="Middle View">
                                 <rect key="frame" x="0.0" y="272" width="375" height="62"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEG-vN-M76">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEG-vN-M76" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="197" y="0.0" width="73" height="62"/>
                                         <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -271,8 +316,11 @@
                                         <state key="normal" title="%">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="operatorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6V-79-Jsm"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMs-ZW-u7p">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMs-ZW-u7p" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="289" y="0.0" width="73" height="62"/>
                                         <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -282,8 +330,11 @@
                                         <state key="normal" title="/">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="operatorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yg8-5x-aC1"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YU1-XE-L4e">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YU1-XE-L4e" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="105" y="0.0" width="73" height="62"/>
                                         <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -293,8 +344,11 @@
                                         <state key="normal" title="+/-">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="operatorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fho-cz-MeE"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpJ-wC-3CR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpJ-wC-3CR" customClass="OperatorsButton" customModule="NVHcalculator" customModuleProvider="target">
                                         <rect key="frame" x="13" y="0.0" width="73" height="62"/>
                                         <color key="backgroundColor" red="0.43908253209999998" green="0.43908253209999998" blue="0.43908253209999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -304,6 +358,9 @@
                                         <state key="normal" title="AC">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ACAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RqK-Qt-Lv5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -350,6 +407,8 @@
                     <connections>
                         <outlet property="distanceBetweenInputTextFieldAndResultLabel" destination="6VJ-8A-Me7" id="ICA-Tt-gah"/>
                         <outlet property="distanceBetweenResultLabelAndMiddleView" destination="MjM-Fd-SkR" id="SGH-ff-wSm"/>
+                        <outlet property="inputTextField" destination="8ba-WP-jaJ" id="AiQ-mS-eTu"/>
+                        <outlet property="resultLabel" destination="ocF-Vo-E0p" id="bAW-OH-gKK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
